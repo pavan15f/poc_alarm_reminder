@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alarm Reminder</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="card">
+      <h1>Alarm Reminder</h1>
+      <p class="subtitle">Pick an exact time and get a reminder notification.</p>
+
+      <label for="alarm-time">Reminder time</label>
+      <input id="alarm-time" type="datetime-local" />
+
+      <div class="actions">
+        <button id="set-reminder">Set Reminder</button>
+        <button id="clear-reminder" class="ghost" disabled>Clear</button>
+      </div>
+
+      <p id="status" aria-live="polite">No reminder set.</p>
+      <p id="countdown" aria-live="polite"></p>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
